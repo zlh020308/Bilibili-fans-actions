@@ -23,3 +23,12 @@ jobs:
 
     - name: Update bilibili
       run: sh run.sh
+      
+    - name: Commit
+      run: |
+        git config --global user.email 185429663@qq.com
+        git config --global user.name Graysonnwu
+        git add .
+        #git commit -m"action:`date +'%Y-%m-%d'`"
+        git commit -m"action:`date`"
+        git pull --rebase
