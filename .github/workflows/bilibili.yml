@@ -24,7 +24,9 @@ jobs:
         pip install requests
 
     - name: Update bilibili
-      run: sh run.sh
+      run: |
+        sh run.sh
+        sh run-plus.sh
       
     - name: Commit
       run: |
