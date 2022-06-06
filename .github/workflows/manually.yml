@@ -32,3 +32,9 @@ jobs:
         #git commit -m"action:`date +'%Y-%m-%d'`"
         git commit -m"action:`date`"
         git pull --rebase
+
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
