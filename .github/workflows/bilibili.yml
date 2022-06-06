@@ -5,7 +5,7 @@ name: Bilibili Fans Auto Update
 # 北京时间凌晨3点55自动跑一次 55 19
 on:
   schedule:
-    - cron: '8 11 * * *'
+    - cron: '20 11 * * *'
 
 jobs:
   build:
