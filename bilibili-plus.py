@@ -23,7 +23,6 @@ follower = json_data['data']['follower']
 likes_url = 'https://api.bilibili.com/x/space/upstat?mid=22245854'
 likes_resp = requests.get(likes_url, headers=header)
 likes_json_data = likes_resp.json()
-# print(likes_json_data)
 video_view = likes_json_data['data']['archive']['view']
 article_view = likes_json_data['data']['article']['view']
 likes = likes_json_data['data']['likes']
