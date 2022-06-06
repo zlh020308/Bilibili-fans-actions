@@ -1,11 +1,11 @@
-# This is a basic workflow to help you get started with Actions
+# 自动更新B站粉丝数
 
 name: Bilibili Fans Auto Update
 
-# Controls when the workflow will run
+# 北京时间凌晨3点55自动跑一次
 on:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '55 19 * * *'
 
 jobs:
   build:
@@ -27,3 +27,17 @@ jobs:
 
     - name: Update bilibili
       run: sh run.sh
+      
+    - name: Commit
+      run: |
+        git config --global user.email 185429663@qq.com
+        git config --global user.name Graysonnwu
+        git add .
+        #git commit -m"action:`date +'%Y-%m-%d'`"
+        git commit -m"action:`date`"
+        git pull --rebase
+        
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
