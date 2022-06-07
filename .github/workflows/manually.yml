@@ -20,9 +20,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
+        pip install sys
 
     - name: Update bilibili
-      run: sh run.sh
+      run: sh general.sh
       
     - name: Commit
       run: |
