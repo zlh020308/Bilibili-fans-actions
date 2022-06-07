@@ -2,10 +2,10 @@
 
 name: Bilibili Fans Auto Update
 
-# BJT 03:55 -> 55 19
+# BJT 03:55 -> 55 19; 23:55 -> 55 15
 on:
   schedule:
-    - cron: '55 19 * * *'
+    - cron: '55 15 * * *'
 
 jobs:
   build:
@@ -25,8 +25,8 @@ jobs:
 
     - name: Update bilibili
       run: |
-        sh run.sh
-        sh run-plus.sh
+        sh bilibili.sh
+        sh general.sh
       
     - name: Commit
       run: |
