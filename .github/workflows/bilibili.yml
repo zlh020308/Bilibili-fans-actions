@@ -2,10 +2,10 @@
 
 name: Bilibili Fans Auto Update
 
-# BJT 03:55 -> 55 19; 23:55 -> 55 15
+# BJT 03:55 -> 55 19; 23:50 -> 50 15
 on:
   schedule:
-    - cron: '55 15 * * *'
+    - cron: '50 15 * * *'
 
 jobs:
   build:
