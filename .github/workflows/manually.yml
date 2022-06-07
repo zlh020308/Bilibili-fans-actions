@@ -22,7 +22,9 @@ jobs:
         pip install requests
 
     - name: Update bilibili
-      run: sh general.sh
+      run: |
+        sh general.sh
+        sh bilibili.sh
       
     - name: Commit
       run: |
