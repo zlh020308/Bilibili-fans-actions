@@ -23,7 +23,7 @@
 如果要自己用，可以直接复制代码，也可以Fork之后：
 - 修改 `uid.txt` 里要监控的uid列表
 - 修改 `bilibili.py` 中的uid
-- 修改 `manually.py` 中的SESSDATA
+- 修改 `general.py` 中的SESSDATA
 - 最后根据需要修改 `./.github/workflows/bilibili.yml` 中的监控频率，目前为每天北京时间23:50爬一次
 
 ---
