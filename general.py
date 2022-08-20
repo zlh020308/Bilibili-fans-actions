@@ -8,10 +8,12 @@ import sys
 
 uid = sys.argv[1]
 # uid = 22245854
+# SESSDATA: e40cc2ff%2C1660895519%2C37141%2A21
+# SESSDATA: a23e924a%2C1676453812%2C6098c%2A81 2022-8-20
 
 # SESSDATA 有一个月有效期，记得更新
 header = {
-        'cookie':'SESSDATA=e40cc2ff%2C1660895519%2C37141%2A21',
+        'cookie':'SESSDATA=a23e924a%2C1676453812%2C6098c%2A81',
         'Host': 'api.bilibili.com',
         'Accept-Encoding': 'gzip, deflate',
         'Accept': '*/*',
