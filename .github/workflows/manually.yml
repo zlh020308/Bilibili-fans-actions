@@ -25,7 +25,6 @@ jobs:
 
     - name: Update bilibili
       run: |
-        sh bilibili.sh
         sh general.sh
         sh draw.sh
       
