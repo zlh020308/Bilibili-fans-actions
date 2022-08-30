@@ -11,10 +11,11 @@ uid = sys.argv[1]
 # SESSDATA: e40cc2ff%2C1660895519%2C37141%2A21
 # SESSDATA: a23e924a%2C1676453812%2C6098c%2A81 2022-8-20
 # SESSDATA: 36f0d262%2C1676780797%2Cd80d4%2A81 2022-8-23
+# 5bfee45e%2C1677118600%2C40697%2A81
 
 # SESSDATA 有一个月有效期，记得更新
 header = {
-        'cookie':'SESSDATA=36f0d262%2C1676780797%2Cd80d4%2A81',
+        'cookie':'SESSDATA=5bfee45e%2C1677118600%2C40697%2A81',
         'Host': 'api.bilibili.com',
         'Accept-Encoding': 'gzip, deflate',
         'Accept': '*/*',
