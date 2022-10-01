@@ -2,6 +2,10 @@
 # coding=utf-8
 import datetime
 import requests
+import sys
+
+uid = sys.argv[1]
+
 header = {
         'Host': 'api.bilibili.com',
         'Accept-Encoding': 'gzip, deflate',
@@ -10,7 +14,7 @@ header = {
         'Cache-Control': 'no-cache',
         'Connection': 'keep-alive',
 }
-url = 'https://api.bilibili.com/x/relation/stat?vmid=22245854'
+url = 'https://api.bilibili.com/x/relation/stat?vmid=%s'%uid
 resp = requests.get(url, headers=header)
 json_data = resp.json()
 data = json_data['data']
