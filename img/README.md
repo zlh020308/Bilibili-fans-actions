@@ -1,10 +1,15 @@
-## 粉丝数变化示例图
-
-![示例图](example.png?raw=true)
-
 ## 贰鼠
 
+纵坐标底数为2
 ![贰鼠](22245854_diff_follower.png?raw=true)
+
+纵坐标线性
+![贰鼠](22245854_diff_follower_ori.png?raw=true)
+
+
+---
+
+> **以下在8-25到10-1经历过一次记录中断**
 
 ## 永雏塔菲
 
