@@ -25,7 +25,7 @@ jobs:
 
     - name: Update bilibili
       run: |
-        sh general.sh
+        sh bilibili.sh
         sh draw.sh
       
     - name: Commit
