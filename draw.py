@@ -6,7 +6,7 @@ import sys
 uid = sys.argv[1]
 # uid = 22245854
 
-df = pd.read_csv('csv/%s.csv'%uid)
+df = pd.read_csv('data/%s.csv'%uid)
 df = df.iloc[::-1]
 df['diff_follower']=df['follower'].diff(1)
 # print(df.head(16))
@@ -50,3 +50,6 @@ plt.gca().spines['top'].set_color('none')
 plt.grid(color='gray', linestyle='-', linewidth=0.5)
 # 背景透明并输出
 plt.savefig('img/%s_diff_follower.png'%uid, transparent=True)
+
+plt.yscale('linear')
+plt.savefig('img/%s_diff_follower_ori.png'%uid, transparent=True)
