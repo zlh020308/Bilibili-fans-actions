@@ -28,8 +28,8 @@ jobs:
     - name: Update bilibili
       run: |
         sh bilibili.sh
+        sh draw.sh
 # sh general.sh
-# sh draw.sh
 # B站SESSDATA更新好像改了，现在必须每天都更新，废弃了
       
     - name: Commit
